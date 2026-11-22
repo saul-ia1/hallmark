@@ -41,7 +41,13 @@ skills-lock.json
 .agents/
 
 # Local agent / preview tooling config (Claude Code, etc.), not skill source
-.claude/
+.claude/*
+!.claude/skills/
+!.claude/agents/
 
 # Local leftover from the old test thumbnails, never published.
 site/_tests/_thumbs/hum-02.jpg
+
+# Python bytecode from skill scripts
+__pycache__/
+*.pyc
